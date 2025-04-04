@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PlentyMatch | Real Love Starts Here</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlentyMatch Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
     body {
       margin: 0;
@@ -13,45 +13,76 @@
       font-family: 'Poppins', sans-serif;
       background-color: #FFF7F7;
       color: #2c2c2c;
+      text-align: center;
     }
 
-    .hero-section {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 5rem 2rem;
-      background-color: #FFF7F7;
+    section {
+      padding: 3rem 1rem;
+      background-color: #fff;
+      margin: 2rem 0;
     }
 
-    .hero-text {
-      max-width: 600px;
+    h1, h2 {
+      color: #d94444;
+      font-weight: 600;
     }
 
-    .hero-text h1 {
+    .section-heading {
       font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .sub-heading {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .icon {
+      color: #d94444;
+      margin-right: 0.5rem;
+    }
+
+    .feature-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .feature-box {
+      background-color: #fff;
+      padding: 2rem;
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature-box h3 {
       color: #d94444;
       margin-bottom: 1rem;
     }
 
-    .hero-text p {
-      font-size: 1.2rem;
+    .feature-box p {
+      font-size: 1rem;
       color: #4a4a4a;
-      line-height: 1.6;
-      margin-bottom: 2rem;
     }
 
-    .hero-buttons {
-      margin-top: 1rem;
+    .feature-box i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #d94444;
     }
 
     .button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
       background-color: #d94444;
       color: white;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      border-radius: 30px;
       text-decoration: none;
-      margin-right: 1rem;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-top: 2rem;
       transition: background-color 0.3s ease;
     }
 
@@ -59,45 +90,77 @@
       background-color: #c33b3b;
     }
 
-    .hero-image {
-      max-width: 500px;
-      border-radius: 10px;
+    /* The New Way to Meet Your Match section styles */
+    #hero {
+      background-color: #FFF7F7;
+      padding: 4rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    
-    /* Mobile responsiveness */
-    @media (max-width: 768px) {
-      .hero-section {
-        flex-direction: column;
-        text-align: center;
-      }
 
-      .hero-text {
-        max-width: 100%;
-      }
+    #hero h2 {
+      font-size: 3rem;
+      color: #d94444;
+    }
 
-      .hero-image {
-        margin-top: 2rem;
-      }
+    #hero p {
+      font-size: 1.2rem;
+      color: #4a4a4a;
+      margin-top: 1.5rem;
+    }
+
+    #hero img {
+      width: 45%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #hero .button {
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
 
   <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="hero-text">
-      <h1>The New Way to Meet Your Match</h1>
+  <section id="hero">
+    <div>
+      <h2>THE NEW WAY TO MEET YOUR MATCH</h2>
       <p>plentymatch is where modern dating meets intentional connection. We serve relationship-minded singles who are ready to meet with clarity, chemistry, and real compatibility — no endless swiping, no guesswork.</p>
       <p>Our community is built for those who want more than small talk and shared playlists — they want depth, direction, and something real. Every introduction is thoughtfully curated, centered around mutual values, energy, and aligned long-term goals.</p>
-      <div class="hero-buttons">
-        <a href="https://plenty-match.smartmatchapp.com/client/submissionform/18/default/" class="button">Get Started</a>
-        <a href="#" class="button">Learn More</a>
-      </div>
+      <p>This is dating done differently — with heart, with purpose, and with you in mind.</p>
+      <a href="https://plenty-match.smartmatchapp.com/client/submissionform/18/default/" class="button" target="_blank" rel="noopener noreferrer">Get Started</a>
     </div>
     <div>
-      <img class="hero-image" src="https://i.imgur.com/tdT0PCV.jpeg" alt="Couple in love" />
+      <img src="https://i.imgur.com/tdT0PCV.jpeg" alt="Couple Image" />
     </div>
   </section>
+
+  <!-- Main Section -->
+  <section>
+    <h1 class="section-heading">DATING, WITHOUT THE GUESSWORK</h1>
+    <p class="sub-heading">Start with intention. Match with meaning.</p>
+    <p>At <strong>plentymatch</strong>, we’re building something new — a dating experience built around curation, care, and modern compatibility. We're here to help you find real connection, not just another app.</p>
+    
+    <div class="feature-boxes">
+      <div class="feature-box">
+        <i class="fas fa-heart"></i>
+        <h3>Launching with Heart</h3>
+        <p>Built for real connections — no endless swiping</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-star"></i>
+        <h3>Curated from the Start</h3>
+        <p>Early members receive personalized matchmaking</p>
+      </div>
+    </div>
+
+    <a href="https://plenty-match.smartmatchapp.com/client/submissionform/18/default/" class="button">Get Started</a>
+  </section>
+
+</body>
+</html>
 
 </body>
 </html>
